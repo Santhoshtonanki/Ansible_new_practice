@@ -1,0 +1,70 @@
+{
+    "Graduates": {
+        "Students": {
+            "Student-1":{
+                "Name": "santhosh tonanki",
+                "Qualification": "BSc",
+                "Group": "MCIc",
+                "Age": "30",
+                "Addresses": [
+                    {
+                        "type": "permanent",
+                        "door-number": "2-108",
+                        "street_name": "BC colony",
+                        "village": "Voppangi village",
+                        "district": "Srikakulam",
+                        "state": "Andhra Pradesh",
+                        "pincode": "532401"
+                    },
+
+                    {
+                        "type": "present",
+                        "door-number": "2-108",
+                        "street_name": "BC colony",
+                        "village": "Voppangi village",
+                        "district": "Srikakulam",
+                        "state": "Andhra Pradesh",
+                        "pincode": "532401"
+                    }                    
+                ],
+
+            "Skills": [
+                "Aws", "Azure", "Jenkins", "Docker", "Kubernetes"
+            ] 
+        },
+
+        "Student-2": {
+                "Name": "Mahesh",
+                "Qualification": "BTech",
+                "Group": "CSC",
+                "Age": "28",
+                "Addresses": [
+                    {
+                        "type": "permanent",
+                        "door-number": "5-308",
+                        "street_name": "SC colony",
+                        "village": "Sanivada village",
+                        "district": "Srikakulam",
+                        "state": "Andhra Pradesh",
+                        "pincode": "532401"
+                    },
+
+                    {
+                        "type": "prasent",
+                        "door-number": "5-308",
+                        "street_name": "SC colony",
+                        "village": "Sanivada village",
+                        "district": "Srikakulam",
+                        "state": "Andhra Pradesh",
+                        "pincode": "532401"
+                    }                    
+                ],
+
+            "Skills": [
+                    "Aws", "Azure", "Jenkins", "Docker", "Kubernetes"
+                ] 
+            }
+
+        }
+    }
+}

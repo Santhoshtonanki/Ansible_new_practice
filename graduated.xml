@@ -1,0 +1,78 @@
+<graduate-students_list>
+    <students>
+        <student>
+            <name>santhosht tonanki</name>
+            <graduation>BSc</graduation>
+            <group> MCIc </group>
+            <age>30</age>
+            <addresses>
+                <addresses>
+                    <type> permanent </type> 
+                    <door-number>1-208 \</door-number>
+                    <street-name> BC colony </street-name>
+                    <village> Voppangi village </village>
+                    <distrcit> Srikakulam </distrcit> 
+                    <state> Andhra Pradesh </state>
+                    <pincode> 532401 </pincode>
+                </addresses>
+
+                <addresses>
+                    <type> present </type> 
+                    <door-number> 1-208 </door-number>
+                    <street-name> BC colony </street-name>
+                    <village> Voppangi village </village>
+                    <distrcit> Srikakulam </distrcit> 
+                    <state> Andhra Pradesh </state>
+                    <pincode> 532401 </pincode>
+                </addresses>
+            </addresses>
+
+            <skills> 
+                <skill>aws</skill>
+                <skill>azure</skill>
+                <skill>jenkins</skill>
+                <skill>Docker</skill>
+                <skill>Ansible</skill>
+                <skill>kubernetes </skills>
+        </student>
+
+
+        <student>
+            <name> mahesh </name>
+            <graduation> BTech </graduation>
+            <group> CSC </group>
+            <age> 28 </age>
+            <addresses>
+                <addresses>
+                    <type> permanent </type> 
+                    <door-number> 5-308 </door-number>
+                    <street-name> SC colony </street-name>
+                    <village> Sanivada village </village>
+                    <distrcit> Srikakulam </distrcit> 
+                    <state> Andhra Pradesh </state>
+                    <pincode> 532401 </pincode>
+                </addresses>
+
+                <addresses>
+                    <type> present </type> 
+                    <door-number> 5-308 </door-number>
+                    <street-name> SC colony </street-name>
+                    <village> Sanivada village </village>
+                    <distrcit> Srikakulam </distrcit> 
+                    <state> Andhra Pradesh </state>
+                    <pincode> 532401 </pincode>
+                </addresses>
+            </addresses>
+
+            <skills>
+                <skill>aws</skill>
+                <skill>azure</skill>
+                <skill>jenkins</skill>
+                <skill>Docker</skill>
+                <skill>Ansible</skill>
+                <skill>kubernetes </skills>
+            </skills>
+
+        </student>
+    </students>
+</graduate-students_list>

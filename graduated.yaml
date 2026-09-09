@@ -1,0 +1,60 @@
+- Graduate list:
+  - Students:
+    - Name: Santhosh Tonanki
+      Qualification: BSc
+      Group: MCIc
+      Age: 30
+
+      Addresses:
+      - type: Permanent
+        door-number: 1-208
+        street: BC colony
+        village: Voppangi village
+        district: Srikakulam
+        state: Andhra Pradesh
+        pincode: 532401
+
+      - type: Present
+        door-number: 1-208
+        street: BC colony
+        village: Voppangi village
+        district: Srikakulam
+        state: Andhra Pradesh
+        pincode: 532401
+
+      Skills:
+      - AWS
+      - Azure
+      - Terraform
+      - Kubernetes
+      - Docker
+      - Ansible
+
+    - Name: Mahesh
+      Qualification: BTech
+      Group: CSC
+      Age: 28
+      Addresses:
+      - type: Permanent
+        door-number: 1-208
+        street: BC colony
+        village: Sanivada village
+        district: Srikakulam
+        state: Andhra Pradesh
+        pincode: 532401
+
+      - type: Present
+        door-number: 5-308
+        street: SC colony
+        village: Sanivada village
+        district: Srikakulam
+        state: Andhra Pradesh
+        pincode: 532401
+
+      Skills:
+      - AWS
+      - Azure
+      - Terraform
+      - Kubernetes
+      - Docker
+      - Ansible
