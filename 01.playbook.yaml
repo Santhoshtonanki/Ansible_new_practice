@@ -2,7 +2,8 @@
   hosts: frontend #connect to win_hostname:
  # required. The hostname to set for the computer.
   become: yes
+
   tasks: 
-  - name: ping
+  - name: Induce an exception to see what happens
     ansible.builtin.ping:
-      output: data
+      data: crash
