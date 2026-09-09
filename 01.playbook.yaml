@@ -1,0 +1,8 @@
+- name: ping the server
+  hosts: frontend #connect to win_hostname:
+ # required. The hostname to set for the computer.
+  become: yes
+  tasks: 
+  - name: ping
+    ansible.builtin.ping:
+      output: data
