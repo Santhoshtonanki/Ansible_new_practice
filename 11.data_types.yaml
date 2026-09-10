@@ -2,23 +2,23 @@
   hosts: local
   connection: local
   vars:
-    - Tool: Ansible
-      Duration: 7 Hours
-      Platform: Join DevOps
-      Learner: Mr. Paint
+    Tool: Ansible
+    Duration: 7 Hours
+    Platform: Join DevOps
+    Learner: Mr. Paint
     
-    - Topics: # ["Jenkins", "Kubernetes", "Docker", "Ansible"]
+    Topics: # ["Jenkins", "Kubernetes", "Docker", "Ansible"]
       - Jenkins
       - Kubernetes
       - Docker
       - Ansible 
 
-    - Concepts:
+    Concepts:
       Cloud: aws
       Infrastructure: Terraform
 
   tasks:
   - name: creating data types files
     ansible.builtin.debug:
-      msg: tool name is {{ "Ansible"}}, Duration is {{ "7 Hours" }}, Platform is {{ "Join DevOps"}}, Learner is {{ "Mr. Paint" }}, Topics are {{ "Jenkins, Kubernetes, Docker, Ansible" }}, concepts are {{ "cloud", "Infrastructure" }}
+      msg: tool name is {{ "Tools"}}, Duration is {{ "Duration" }}, Platform is {{ "Platform"}}, Learner is {{ "Learner" }}, Topics are {{ Topics" }}, concepts are {{ "Concepts" }}
 
