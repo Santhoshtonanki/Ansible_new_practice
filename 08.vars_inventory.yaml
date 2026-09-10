@@ -1,0 +1,7 @@
+- name: creating a variable with use of inventory file
+  hosts: local
+  connection: local
+  tasks:
+  - name: print creating variables
+    ansible.builtin.debug:
+      msg: Tool name is {{ "Ansible" }}, Duration is {{ "7 Hours" }}, Platform name is {{ "Join DevOps" }}, Learner name is {{ "Mr. Paint" }}
