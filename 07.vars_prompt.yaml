@@ -1,8 +1,8 @@
 - name: creating a variable file with the help of prompt
   hosts: local
   connection: local
-  Vars_prompt:
-    - name: user_name
+  vars_prompt:
+    - name: username
       prompt: "what is you name"
       private: false
   
@@ -13,5 +13,5 @@
   tasks:
   - name: create a variable with prompt file
     ansible.builtin.debug:
-      msg:  "your credentials are evaluated and you name is {{ "user_name" }}"
+      msg:  "your credentials are evaluated and you name is {{ "username" }}"
     
