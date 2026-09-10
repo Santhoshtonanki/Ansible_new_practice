@@ -20,5 +20,11 @@
   tasks:
   - name: creating data types files
     ansible.builtin.debug:
-      msg: tool name is {{ "Tools"}}, Duration is {{ "Duration" }}, Platform is {{ "Platform"}}, Learner is {{ "Learner" }}, Topics are {{ Topics" }}, concepts are {{ "Concepts" }}
+      msg: 
+        - "Tool name is {{ Tool }}" 
+        - "Duration is {{ Duration }}"
+        - "Platform is {{ Platform }}" 
+        - "Learner is {{ Learner }}"
+        - "Topics are {{ Topics }}" 
+        - "concepts are {{ Concepts }}"
 
