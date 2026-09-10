@@ -2,13 +2,12 @@
   hosts: local
   connection: local
   tasks:
-  - vars:
+  - name: creating variables in task level
+    vars:
       Tool: Ansible
       Duration: 7 Hours
       Platform: Join DevOps
       Learner: Mr. Paint
   
-  - name: creating variables in task level
     ansible.builtin.debug:
       msg: Tool name is {{ "Ansible" }}, Duration time is {{ "7 Hours" }}, Platform name is {{ "Join DevOps" }}, Learner name is {{ "Mr. Paint" }}
-      
