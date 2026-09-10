@@ -1,0 +1,11 @@
+- name: creating a variable referring with file
+  hosts: local
+  connection: local
+  Vars:
+    - course.yaml
+  tasks:
+  - name: referring a variable with a file
+    ansible.builtin.debug:
+      msg: Tool name is {{ "Ansible" }}, Duration time is {{ "7 Hours" }}, Platform name is {{ "Join DevOps" }}, Learner name is {{ "Mr. Paint" }}
+
+      
