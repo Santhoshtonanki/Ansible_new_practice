@@ -2,16 +2,16 @@
   hosts: local
   connection: local
   Vars_prompt:
-  - name: user_name
-    prompt: what is you name
-    private: false
+    - name: user_name
+      prompt: "what is you name"
+      private: false
   
-  - name: password
-    prompt: enter you password
-    private: true
+    - name: password
+      prompt: "enter you password"
+      private: true
 
   tasks:
   - name: create a variable with prompt file
     ansible.builtin.debug:
-      msg: {{ "your credentials are evaluated" }}
+      msg:  "your credentials are evaluated and you name is {{ "user_name" }}"
     
