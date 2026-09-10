@@ -3,7 +3,5 @@
   connection: local
   tasks:
   - name: creating a variables with arguments
-    ansible.builtin.debug:  
+    ansible.builtin.debug:
       msg: Tool name is {{ "Tool" }}, Duration time is {{ "Duration" }}, Platform name is {{ "Platform" }}, Learner name is {{ "Learner" }}
-
-
