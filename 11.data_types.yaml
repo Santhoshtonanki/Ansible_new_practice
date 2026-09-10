@@ -1,0 +1,24 @@
+- name: defining data types
+  hosts: local
+  connection: local
+  vars:
+    - Tool: Ansible
+      Duration: 7 Hours
+      Platform: Join DevOps
+      Learner: Mr. Paint
+    
+    - Topics: # ["Jenkins", "Kubernetes", "Docker", "Ansible"]
+      - Jenkins
+      - Kubernetes
+      - Docker
+      - Ansible 
+
+    - Concepts:
+      Cloud: aws
+      Infrastructure: Terraform
+
+  tasks:
+  - name: creating data types files
+    ansible.builtin.debug:
+      msg: tool name is {{ "Ansible"}}, Duration is {{ "7 Hours" }}, Platform is {{ "Join DevOps"}}, Learner is {{ "Mr. Paint" }}, Topics are {{ "Jenkins, Kubernetes, Docker, Ansible" }}, concepts are {{ "cloud", "Infrastructure" }}
+
