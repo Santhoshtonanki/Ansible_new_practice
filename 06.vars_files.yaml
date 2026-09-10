@@ -1,8 +1,9 @@
 - name: creating a variable referring with file
   hosts: local
   connection: local
-  Vars:
+  vars:
     - course.yaml
+    
   tasks:
   - name: referring a variable with a file
     ansible.builtin.debug:
