@@ -1,0 +1,12 @@
+- name: variables are creating 
+  hosts: local
+  connection: local
+  vars:
+    Tool: Ansible
+    Duration: 7 Hours
+    Platform: Join DevOps
+    Learner: Mr. Paint
+  tasks:
+  - name: print creating variables
+    ansible.builtin.debug:
+      msg: Tool name is {{ "Ansible" }}, Duration is {{ "7 Hours" }}, Platform name is {{ "Join DevOps" }}, Learner name is {{ "Mr. Paint" }}
