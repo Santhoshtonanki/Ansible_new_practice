@@ -13,5 +13,5 @@
   tasks:
   - name: create a variable with prompt file
     ansible.builtin.debug:
-      msg:  "your credentials are evaluated and you name is {{ "username" }}"
+      msg:  "your credentials are evaluated and you name is {{ username }}"
     
