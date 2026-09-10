@@ -1,0 +1,9 @@
+- name: creating variables with arguments
+  hosts: local
+  connection: local
+  tasks:
+  - name: creating a variables with arguments
+    ansible.builtin.debug:  
+      msg: Tool name is {{ "Ansible" }}, Duration time is {{ "7 Hours" }}, Platform name is {{ "Join DevOps" }}, Learner name is {{ "Mr. Paint" }}
+
+
