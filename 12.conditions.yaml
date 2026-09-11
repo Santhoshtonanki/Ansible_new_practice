@@ -2,12 +2,13 @@
   hosts: local
   connection: local
   become: yes
-  number: 12
+  vars:
+    number: 12
   
   Tasks: 
   - name: if the given number is less thank 10
     ansible.builtin.debug:
-      msg: "given number is {{ number }} < 10"
+      msg: "given number is {{ number }} less than 10"
     when: number < 10
 
 

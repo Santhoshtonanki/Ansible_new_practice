@@ -1,0 +1,12 @@
+- name: creating a loops file
+  hosts: local
+  connection: local
+  tasks:
+  - name: printing a item
+    ansible.builtin.debug:
+      msg: "This vegetable name is  {{ item }}"
+    loop:
+    - potato
+    - lady finger
+    - carrot
+    - beetroot

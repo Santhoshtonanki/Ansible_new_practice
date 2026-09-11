@@ -1,0 +1,17 @@
+- name: installing nginx with using conditions
+  hosts: local
+  connections: local
+  tasks:
+  - name: install nginx if RedHat
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+      msg: installing nginx if server is belongs to RedHat
+    when: ansible_os_family == "RedHat" #use Ansible while using/ referring facts
+
+  - name: install nginx if RedHat
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+      msg: installing nginx if server is belongs to RedHat
+    when: ansible_os_family == "Debian"

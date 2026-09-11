@@ -2,17 +2,19 @@
   hosts: local
   connection: local
   vars:
-    Tool: Ansible
-    Duration: "7 Hours"
-    Platform: "Join DevOps"
-    Learner: "Mr. Paint"
+    Tool: Ansible #string
+    Duration: "7 Hours" #string
+    Platform: "Join DevOps" #string
+    Learner: "Mr. Paint" #string
+    is-live: true #boolean
     
+    #list
     Topics: # ["Jenkins", "Kubernetes", "Docker", "Ansible"]
       - Jenkins
       - Kubernetes
       - Docker
       - Ansible 
-
+    
     Concepts:
       Cloud: aws
       Infrastructure: Terraform
