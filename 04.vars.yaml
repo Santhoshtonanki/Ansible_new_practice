@@ -1,0 +1,13 @@
+- name: variable level play
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    Name: "Santhosh"
+    Age: 30
+    Designation: "DevOps Engineer"
+    Location: "Hyderabad"
+  tasks: 
+  - name: Display variable values
+    ansible.builtin.debug:
+      msg: "Name: {{ Name }}, Age: {{ Age }}, Designation: {{ Designation }}, Location: {{ Location }}" 
