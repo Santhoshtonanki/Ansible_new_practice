@@ -1,0 +1,10 @@
+- name: practicing on variables files
+  hosts: local
+  connection: local
+  become: yes
+  vars_files:
+  - personal_information.yaml
+  tasks:
+  - name: "refer the variables via files"
+    ansible.builtin.debug:
+      msg: "name is {{ name }},  age is {{ age }}, my location is {{ location }}, and i am working as a {{ designation }}, working in {{ employer }} office"

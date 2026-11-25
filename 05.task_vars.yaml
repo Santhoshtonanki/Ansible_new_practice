@@ -1,0 +1,13 @@
+- name: applying task level variables
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: Display variable values
+    vars:
+      Name: "Santhosh"
+      Age: 30
+      Designation: "DevOps Engineer"
+      Location: "Hyderabad"
+    ansible.builtin.debug:
+      msg: "Name: {{ Name }}, Age: {{ Age }}, Designation: {{ Designation }}, Location: {{ Location }}"
