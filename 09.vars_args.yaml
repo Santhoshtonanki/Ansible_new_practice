@@ -1,5 +1,5 @@
 - name: getting variable values from command line arguments
-  hosts: locale_gen
+  hosts: locale
   connection: local
   become: yes
 
