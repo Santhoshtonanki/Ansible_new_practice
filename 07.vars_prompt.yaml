@@ -5,11 +5,11 @@
   vars_prompt:
   - name: targeting the user
     prompt: please enter your user name
-    private: true
+    private: false
 
   - name: authenticating with password
     prompt: please enter you password
-    private: false
+    private: true
     encrypt: Santhosh@123
 
   tasks:
