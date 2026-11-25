@@ -8,13 +8,13 @@
   #vars_files:
   #- personal_information.yaml
 
- 
-  vars:
-    name: play level variable Hero
-    age: 30
-    location: Hyderabad
-    designation: Cloud Engineer
-    employer: accenture
+ ## 5th
+  # vars:
+  #   name: play level variable Hero
+  #   age: 30
+  #   location: Hyderabad
+  #   designation: Cloud Engineer
+  #   employer: accenture
    
    ## 4th
   # vars_prompt:
