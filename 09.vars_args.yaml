@@ -7,3 +7,7 @@
   - name: getting variable values from command line arguments
     ansible.builtin.debug:
       msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office
+
+
+### my mistake is i have not given the variable values in command line arguments while running the playbook. so it is giving error.
+## I forgot to add "-e" before the variable values in command line arguments while running the playbook. so it is giving error. after that i fix it and it is working fine.
