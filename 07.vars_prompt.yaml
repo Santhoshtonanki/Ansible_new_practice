@@ -1,0 +1,18 @@
+- name: Refer the variables via variable prompts
+  hosts: local
+  connection: local
+  become: yes
+  vars_prompt:
+  - name: targeting the user
+    prompt: please enter your user name
+    private: true
+
+  - name: authenticating with password
+    prompt: please enter you password
+    private: false
+    encrypt: Santhosh@123
+
+  tasks:
+  - name: verifying the user credentials
+    ansible.builtin.debug:
+    msg: "your credentials are verified successfully"
