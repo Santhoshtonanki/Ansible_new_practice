@@ -3,8 +3,8 @@
   connection: local
   become: yes
 
-  vars_files:
-  - personal_information.yaml
+  #vars_files:
+  #- personal_information.yaml
 
   vars:
     name: play level variable Hero
@@ -20,6 +20,7 @@
 
   tasks:
   - name: getting variable information form inventory file
+    ## 2nd preference is given to task level variable if it is defined in the task
     # vars:
     # - name: task level variable maven
     #   age: 30
@@ -29,3 +30,9 @@
 
     ansible.builtin.debug:
       msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office
+  ##preferences order is as follows:
+  # 1. Argument level variable
+  # 2. Task level variable
+  # 3. Prompt level variable
+  # 4. Play level variable  
+  # 5. inventory level variable
