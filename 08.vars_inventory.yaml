@@ -1,0 +1,8 @@
+- name: refer variable by using inventory file
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: getting variable information form inventory file
+    ansible.builtin.debug:
+      msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office
