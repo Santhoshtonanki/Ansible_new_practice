@@ -15,4 +15,4 @@
   tasks:
   - name: verifying the user credentials
     ansible.builtin.debug:
-    msg: "your credentials are verified successfully"
+      msg: "your credentials are verified successfully"
