@@ -9,8 +9,7 @@
 
   - name: authenticating with password
     prompt: please enter you password
-    private: false
-    encrypt: Santhosh@123
+    private: true
 
   tasks:
   - name: verifying the user credentials
