@@ -7,7 +7,7 @@
   - personal_information.yaml
 
   vars:
-    name: play level variable robin
+    name: play level variable Hero
     age: 30
     location: Hyderabad
     designation: Cloud Engineer
@@ -20,12 +20,12 @@
 
   tasks:
   - name: getting variable information form inventory file
-    vars:
-    - name: task level variable robin
-      age: 30
-      location: Hyderabad
-      designation: Cloud Engineer
-      employer: accenture
+    # vars:
+    # - name: task level variable maven
+    #   age: 30
+    #   location: Hyderabad
+    #   designation: Cloud Engineer
+    #   employer: accenture
 
     ansible.builtin.debug:
       msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office
