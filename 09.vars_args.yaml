@@ -1,0 +1,9 @@
+- name: getting variable values from command line arguments
+  hosts: locale_gen
+  connection: local
+  become: yes
+
+  tasks:
+  - name: getting variable values from command line arguments
+    ansible.builtin.debug:
+      msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office
