@@ -2,21 +2,25 @@
   hosts: local
   connection: local
   become: yes
-
+  
+  
+  ##3rd
   #vars_files:
   #- personal_information.yaml
 
+ 
   vars:
     name: play level variable Hero
     age: 30
     location: Hyderabad
     designation: Cloud Engineer
     employer: accenture
-
-  vars_prompt:
-  - name: prompt level variable robin
-    prompt: please enter your name
-    private: false
+   
+   ## 4th
+  # vars_prompt:
+  # - name: prompt level variable robin
+  #   prompt: please enter your name
+  #   private: false
 
   tasks:
   - name: getting variable information form inventory file
