@@ -3,7 +3,7 @@
   connection: local
   become: yes
   vars:
-    number: 25
+    number: $?
 
   tasks:
   - name: check the given number is less than  20
