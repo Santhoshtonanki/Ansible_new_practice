@@ -38,4 +38,4 @@
   tasks:
   - name: Defining Data Types
     ansible.builtin.debug:
-      msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office, the tools i am using are {{ tools }}, the course details are {{ course.name }}, {{ course.duration }}, {{ course.location }}, {{ course.mode }}, {{ course.trainer }}
+      msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office, the tools i am using are {{ tools }}, the course details are {{ course.name }}, course duration is {{ course.duration }}, in {{ course.location }} location , available in {{ course.mode }}, {{ course.trainer }} is your mentor 
