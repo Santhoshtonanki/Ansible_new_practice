@@ -10,3 +10,42 @@
     ansible.builtin.debug:
       msg: the given number {{ number }} is less than 10
     when: number < 10
+
+- name: conditions in ansible
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    number: 11
+
+  tasks:
+  - name: check the given number is less than or greater than
+    ansible.builtin.debug:
+      msg: the given number {{ number }} is less than 10
+    when: number < 10
+
+- name: conditions in ansible
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    number: 6
+
+  tasks:
+  - name: check the given number is greater than  10
+    ansible.builtin.debug:
+      msg: the given number {{ number }} is greater than  10
+    when: number > 10
+
+- name: conditions in ansible
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    number: 14
+
+  tasks:
+  - name: check the given number is greater than  10
+    ansible.builtin.debug:
+      msg: the given number {{ number }} is greater than  10
+    when: number > 10
