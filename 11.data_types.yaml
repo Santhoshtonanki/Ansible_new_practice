@@ -1,0 +1,41 @@
+- name: defining data types
+  hosts: locale
+  connection: local
+  become: yes # required. Name and encoding of the locale, such as "en_GB.UTF-8".
+  
+  vars:
+    name: john
+    age: 30
+    location: hyderabad
+    designation: DevOps engineer
+    employer: accenture
+    
+    tools: 
+    - jenkins
+    - aws cloud services
+    - ansible
+    - docker
+    - kubernetes
+    - terraform
+    - git
+    - github
+    - linux
+    - shell_scripting
+    - yaml_scripting
+# we can define list of items in two ways. 1st way is to define the list in a single line and 2nd way is to define the list in multiple lines.
+    #["jenkins" "aws cloud services" "ansible" "docker" "kubernetes" "terraform" "git" "github" "linux" "shell_scripting" "yaml_scripting"]
+    
+
+    course:
+      name: DevOps
+      duration: 6 months
+      location: hyderabad
+      mode: online
+      trainer: paul peter 
+# mapping or dictionary is a collection of key value pairs. we can define mapping in two ways. 1st way is to define the mapping in a single line and 2nd way is to define the mapping in multiple lines.
+    # {"name": "DevOps", "duration": "6 months", "location": "hyderabad", "mode": "online", "trainer": "paul peter"}
+
+  tasks:
+  - name: Defining Data Types
+    ansible.builtin.debug:
+      msg: my name is {{ name }}, my age is {{ age }}, my location is {{ location }}, i am working as a {{ designation }} in {{ employer }} office. I have knowledge in the following tools: {{ tools }}. I have completed the {{ course.name }} course duration {{ course.duration }} and was conducted in {{ course.location }} in {{ course.mode }} mode by {{ course.trainer }}.
