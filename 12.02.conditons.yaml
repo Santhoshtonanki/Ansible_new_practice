@@ -6,13 +6,15 @@
     number: 25
 
   tasks:
-  - name: check the given number is less than or greater than or equal to 20
+  - name: check the given number is less than  20
     ansible.builtin.debug:
       msg: the given number {{ number }} is less than 20
     when: number < 20
-  - name: check the given number is greater than or equal to 20
+  - name: check the given number is greater than  20
     ansible.builtin.debug:
-      msg: the given number {{ number }} is greater than 20 or equal to 20
+      msg: the given number {{ number }} is greater than 20
     when: number >= 20
-    
-    
+  - name: check the given number is equal to  20
+    ansible.builtin.debug:
+      msg: the given number {{ number }} is equal to 20
+    when: number == 20
