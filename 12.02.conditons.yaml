@@ -2,8 +2,6 @@
   hosts: local
   connection: local
   become: yes
-  vars:
-    number: $?
 
   tasks:
   - name: check the given number is less than  20
