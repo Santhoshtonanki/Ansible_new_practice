@@ -1,0 +1,20 @@
+- name: installing nginx by checking with facts
+  hosts: local
+  connection: local
+  become: yes
+
+  tasks:
+  - name: install nginx when ansible os is related to RedHat family
+    ansible.builtin.packages:
+    - name: nginx
+      state: present
+      msg: nginx is installing because of this ansible server belongs ot RedHat family
+    when: ansible_os_family == RedHat
+
+  - name: start nginx when ansible os is related to RedHat family
+    ansible.builtin.service:
+    - name: nginx
+      state: started
+      msg: nginx is installing because of this ansible server belongs ot RedHat family
+    when: ansible_os_family == RedHat
+    enabled: yes
