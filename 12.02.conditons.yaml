@@ -16,3 +16,7 @@
     ansible.builtin.debug:
       msg: the given number {{ number }} is equal to 20
     when: number | int == 20
+
+#One more important point: The value passed through -e "number=13" may be treated as a string. Therefore, it is recommended to use number | int to convert the value into an integer before performing numerical comparisons.
+
+#or else you can also mention number value in the vars section of the playbook

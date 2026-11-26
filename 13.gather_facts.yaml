@@ -1,0 +1,8 @@
+- name: gathering facts in ansible
+  hosts: local
+  connection: local
+  become: yes
+
+  tasks:
+  - name: gathering facts
+    ansible.builtin.debug:
