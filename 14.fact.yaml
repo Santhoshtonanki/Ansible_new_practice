@@ -5,7 +5,7 @@
 
   tasks:
   - name: install nginx when ansible os is related to RedHat family
-    ansible.builtin.packages:
+    ansible.builtin.package:
     - name: nginx
       state: present
       msg: nginx is installing because of this ansible server belongs ot RedHat family
